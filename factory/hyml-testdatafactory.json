@@ -1,0 +1,9 @@
+{
+	"name": "hyml-testdatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "44553373-18e2-448b-b793-1f66d038628b",
+		"tenantId": "b41b72d0-4e9f-4c26-8a69-f949f367c91d"
+	}
+}

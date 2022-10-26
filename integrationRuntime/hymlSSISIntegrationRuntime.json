@@ -1,0 +1,31 @@
+{
+	"name": "hymlSSISIntegrationRuntime",
+	"properties": {
+		"type": "Managed",
+		"description": "SSIS Integration Runtime",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US",
+				"nodeSize": "Standard_D4_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 4
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "hymlsqlservertest.database.windows.net",
+					"catalogAdminUserName": "hymlSqlUserAdmin",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "Basic"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			},
+			"customerVirtualNetwork": {
+				"subnetId": "/subscriptions/c8e7a803-4f9f-48ec-82e7-6ac04f25cda2/resourceGroups/hyml-rg01/providers/Microsoft.Network/virtualNetworks/hymlvNet/subnets/hymlsubNet"
+			}
+		}
+	}
+}
